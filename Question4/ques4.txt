@@ -1,0 +1,24 @@
+//DEFINITION OF DNS MODULE:
+•	The DNS module in Node.js is primarily used for name resolution, i.e., converting domain names into IP addresses (forward lookup) or resolving IP addresses into domain names (reverse lookup).
+•	It also provides the capability to resolve different types of DNS records (e.g., A, MX, TXT, SRV) and
+ handle both IPv4 and IPv6.
+•	The DNS module uses libuv (Node.js' asynchronous I/O library) for non-blocking DNS operations, which means that 
+DNS requests do not block other operations in your application.
+
+//Common Methods in the DNS Module:
+1.	dns.lookup():
+        Resolves a domain name into an IP address, similar to the system's native DNS lookup 
+        (which uses /etc/hosts on Unix systems or DNS configurations).
+2.	dns.resolve():
+	    Performs DNS resolution without using the underlying operating system’s facilities. 
+        Can retrieve various DNS records like A, AAAA, CNAME, etc.
+3.	dns.resolve4():
+	    Specifically resolves only IPv4 addresses for a given domain.
+4.	dns.resolve6():
+     	Specifically resolves only IPv6 addresses for a given domain.
+5.	dns.reverse():
+     	Resolves an IP address into a domain name (reverse lookup).
+6.	dns.resolveMx():
+    	Resolves the MX (Mail Exchange) records for a domain.
+7.	dns.resolveTxt():
+    	Retrieves the TXT records for a domain
