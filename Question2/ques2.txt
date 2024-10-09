@@ -1,0 +1,30 @@
+•	The fs module in Node.js is crucial for interacting with the file system. 
+.   You can create, read, write, delete, or modify files and directories using various methods provided by the fs module.
+•	It provides both synchronous (blocking) and asynchronous (non- blocking) methods.
+
+Common Operations with the fs Module:
+1.	Creating/Opening a File:
+const fs = require('fs');
+fs.writeFileSync('newfile.txt', 'Hello World!', (err) => { if (err) throw err;
+console.log('File created successfully!');
+});
+ 
+2.	Reading from a File: 
+fs.readFile('newfile.txt', 'utf8', (err, data) => {
+if (err) throw err; console.log('File Content:', data);
+});
+
+3.	Appending to a File:
+fs.appendFile('newfile.txt', ' Additional data!', (err) => { if (err) throw err;
+console.log('Content added successfully!');
+});
+
+4.	Renaming a File:
+fs.rename('newfile.txt', 'renamedfile.txt', (err) => { if (err) throw err;
+console.log('File renamed successfully!');
+});
+
+5.	Deleting a File: fs.unlink('renamedfile.txt', (err) => {
+if (err) throw err;
+console.log('File deleted successfully!');
+});
