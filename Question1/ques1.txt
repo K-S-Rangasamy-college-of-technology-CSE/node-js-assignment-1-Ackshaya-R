@@ -1,0 +1,11 @@
+Blocking code:
+•	Blocking code in Node.js means that each operation must finish completely before the next one starts.
+•	This approach can lead to performance issues, especially with I/O-bound tasks like reading from the disk 
+or fetching data from an API, as the entire system might halt and wait for one task to finish.
+
+Non-Blocking code:
+•	Non-blocking code, on the other hand, allows multiple operations to run simultaneously without waiting 
+for each other to complete.
+•	Node.js uses an event-driven architecture that works well with non- blocking code, making it efficient 
+for handling a large number of concurrent operations
+
