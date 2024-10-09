@@ -1,0 +1,5 @@
+Definition of REPL:
+•	A REPL (Read-Eval-Print-Loop) is an interactive shell where the user inputs code, the system evaluates it,
+ and the output is printed
+•	In Node.js, we can implement a simple REPL to check whether a number is odd or even.
+
